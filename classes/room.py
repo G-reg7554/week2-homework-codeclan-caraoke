@@ -1,8 +1,9 @@
 class Room:
-    def __init__(self, room_type, entry_fee, vip_entry):
+    def __init__(self, room_type, entry_fee, vip_entry, till):
         self.room = room_type
         self.entry_fee = entry_fee
         self.vip_entry = vip_entry
+        self.till = till
         self.guest_list_main = []
         self.guest_list_upstairs = []
         self.music_list_main = []
@@ -31,3 +32,7 @@ class Room:
     def add_song_to_upstairs_room(self, tunes3, tunes4):
         self.music_list_upstairs.append(tunes3)
         self.music_list_upstairs.append(tunes4)
+    
+        
+
+
